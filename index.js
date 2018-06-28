@@ -3,6 +3,13 @@ function takeANumber(katzDeliLine, name) {
   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
 }
 
+var newNumber = 0
+
+function getANumber() {
+  newNumber += 1
+  return `You are number ${newNumber}.`
+}
+
 function nowServing(deliLine) {
   while (deliLine.length > 0) {
     return `Currently serving ${deliLine.shift()}.`
